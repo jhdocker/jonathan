@@ -1,0 +1,22 @@
+<?php
+/*
+* implements hook_menu()
+*/
+
+function slidertest_menu() {
+  $items['hello'] = array(
+    'title' => 'Hello world!',
+    'description' => 'Find and manage content.',
+    'page callback' => 'helloworld_page',
+    'access callback' => TRUE,
+    //'page arguments' => array('node_admin_content'),
+    //'access arguments' => array('access content overview'),
+    //'weight' => -10,
+    //'file' => 'node.admin.inc',
+  );
+  return $items;
+}
+
+function helloworld_page() {
+    return 'Boosh';
+}
