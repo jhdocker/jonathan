@@ -102,10 +102,17 @@ p {
 
 .front-content {
     //front page content with articles
+    width: 80%;
     padding: 0 40px;
     margin-top: -7px;
-    border-left: solid 1.5px #888;
-    border-right: solid 1.5px #888;
+    border-left: solid 1.5px #ccc;
+    border-right: solid 1.5px #ccc;
+
+    @media only screen and (max-width: 40em) {
+        border-right: none;
+        border-left: none;
+        width: 100%;
+    }
 
     h1 {
         padding-top: 60px;
@@ -126,6 +133,7 @@ p {
 
 .top-bar {
     background-color: #454545;
+    z-index: 10;
 
     .top-bar-section {
         ul li a {
@@ -154,4 +162,39 @@ p {
 
 .content {
     margin-top: 30px;
+}
+
+.sidebar {
+
+    @media only screen and (max-width: 900px) {
+        display:none;
+    }
+
+    .form-submit {
+        background-color: #888;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+}
+
+.small-subscribe {
+    display: none;
+
+    @media only screen and (max-width: 900px) {
+        display: block;
+    }
+
+    .form-submit {
+        background-color: #888;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+}
+
+//default image upload styles
+.image-large-left {
+    float: left;
+    margin-right: 10px;
 }

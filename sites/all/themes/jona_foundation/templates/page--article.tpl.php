@@ -67,7 +67,7 @@
     <?php endif; ?>
 
     <div class='row'>
-        <div class="small-8 large-centered columns front-content">
+        <div class="small-12 large-centered small-centered columns front-content">
             <?php if ($title && !$is_front): ?>
                 <?php print render($title_prefix); ?>
                 <h1 id="page-title" class="title"><?php print $title; ?></h1>

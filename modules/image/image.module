@@ -379,12 +379,23 @@ function image_image_default_styles() {
     )
   );
 
-  $styles['x-large'] = array(
-    'label' => 'X-Large (600x600)',
+  $styles['large-left'] = array(
+    'label' => 'Large (480x480)',
     'effects' => array(
       array(
         'name' => 'image_scale',
-        'data' => array('width' => 600, 'height' => 600, 'upscale' => 0),
+        'data' => array('width' => 480, 'height' => 480, 'upscale' => 0),
+        'weight' => 0,
+      ),
+    )
+  );
+
+  $styles['x-large'] = array(
+    'label' => 'X-Large (800x800)',
+    'effects' => array(
+      array(
+        'name' => 'image_scale',
+        'data' => array('width' => 800, 'height' => 800, 'upscale' => 0),
         'weight' => 0,
       ),
     )

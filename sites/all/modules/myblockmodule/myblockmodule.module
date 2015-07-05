@@ -1,0 +1,63 @@
+<?php
+
+function myblockmodule_block_info(){
+    $block['jona_tits'] = array(
+        'info' => t('Jona Countdown'),
+        'cache' => DRUPAL_NO_CACHE,
+        );
+    return $block;
+}
+
+
+function myblockmodule_block_view($block_key){
+    $block = array();
+
+    if ($block_key =='jona_tits'){
+        $block['subject'] = t('jonathan dockery');
+        $block['content'] = myblockmodule_block_content();
+    }
+    return $block;
+}
+
+
+function myblockmodule_block_content(){
+    // controling the content of the myblockmodule block
+    return drupal_get_form('jonaContact_form');
+}
+
+function jonaContact_form($form, &$form_state){
+    //jonathan side contact form
+    $form['name'] = array(
+        '#type' => 'textfield',
+        //'#title' => t('Name'),
+        '#attributes' => array(
+            'placeholder' => t('name')
+            )
+        );
+
+    $form['email'] = array(
+        '#type' => 'textfield',
+        '#attributes' => array(
+            'placeholder' => t('your email')
+            )
+        );
+
+     $form['content'] = array(
+        '#type' => 'textarea',
+        //'#title' => t('Let\'s talk'),
+        '#attributes' => array(
+            'placeholder' => t('let\'s talk')
+            )
+        );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Submit'),
+        );
+    return $form;
+}
+
+function jonaContact_form_submit($form, &$form_state) {
+    //what happens when we submit form
+    dpm($form_state);
+}

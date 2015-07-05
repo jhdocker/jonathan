@@ -4767,9 +4767,9 @@ label.error {
   left: 0;
   position: relative;
   width: auto;
-  -webkit-transition: left 300ms ease-out;
-  -moz-transition: left 300ms ease-out;
-  transition: left 300ms ease-out;
+  -webkit-transition: left 900ms ease-out;
+  -moz-transition: left 900ms ease-out;
+  transition: left 900ms ease-out;
 }
 /* line 240, ../../../../../../../../../Users/Jackson/.rvm/gems/ruby-2.0.0-p353/gems/zurb-foundation-4.3.2/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul {

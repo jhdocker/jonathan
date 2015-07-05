@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function jona_block_block_info() {
+  $blocks['my_block'] = array(
+    'info' => t('headshot and contact form'),
+  );
+
+  return $blocks;
+}
+
+function jona_block_block_view($block_key){
+    $block = array();
+
+    if($block_key == 'my_block'){
+        //Define the block title.
+        $block['subject'] = t('jonathan block test');
+
+        //define block content
+        $block['content'] = t('this should be the content, wherever I put it.');
+    }
+    return $block;
+}
