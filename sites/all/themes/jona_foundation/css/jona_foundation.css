@@ -7387,7 +7387,7 @@ p {
   border-left: solid 1.5px #ccc;
   border-right: solid 1.5px #ccc;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 900px) {
   /* line 103, ../scss/jona_foundation.scss */
   .front-content {
     border-right: none;
@@ -7464,16 +7464,17 @@ p {
   /* line 181, ../scss/jona_foundation.scss */
   .small-subscribe {
     display: block;
+    margin-left: 20px !important;
   }
 }
-/* line 188, ../scss/jona_foundation.scss */
+/* line 190, ../scss/jona_foundation.scss */
 .small-subscribe .form-submit {
   background-color: #888;
   border: none;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 197, ../scss/jona_foundation.scss */
+/* line 199, ../scss/jona_foundation.scss */
 .image-large-left {
   float: left;
   margin-right: 10px;

@@ -108,7 +108,7 @@ p {
     border-left: solid 1.5px #ccc;
     border-right: solid 1.5px #ccc;
 
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 900px) {
         border-right: none;
         border-left: none;
         width: 100%;
@@ -181,8 +181,10 @@ p {
 .small-subscribe {
     display: none;
 
+
     @media only screen and (max-width: 900px) {
         display: block;
+        margin-left: 20px !important;
     }
 
     .form-submit {

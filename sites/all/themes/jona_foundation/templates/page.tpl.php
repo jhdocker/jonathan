@@ -149,18 +149,33 @@
 
 
     </div>
+
     <!--hidden subscribe field for mobile-->
     <div class="row small-subscribe">
-      <div class="small-8 small-centered columns">
-        <?php print render($page['sidebar_second']);?>
+      <div class="small-8 columns">
+        <a href="#" class='radius button' data-reveal-id="myModal">Subscribe!</a>
+
+        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <?php print render($page['sidebar_second']);?>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
       </div>
     </div>
     <div class='row'>
-        <div class="small-12 large-8 columns front-content">
+        <div class="small-12 medium-12 large-8 columns front-content">
           <?php print render($page['content']);?>
         </div>
         <div class='small-2 columns sidebar'>
-          <?php print render($page['sidebar_second']);?>
+          <div class="small-8 columns">
+            <a href="#" class='radius button' data-reveal-id="myModal">Subscribe!</a>
+
+            <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <?php print render($page['sidebar_second']);?>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+
+          </div>
         </div>
     </div>
 
