@@ -149,13 +149,18 @@
 
 
     </div>
-
+    <!--********
+    ********
+    ********
+    ********
+    -->
     <!--hidden subscribe field for mobile-->
     <div class="row small-subscribe">
-      <div class="small-8 columns">
-        <a href="#" class='radius button' data-reveal-id="myModal">Subscribe!</a>
+      <div class="small-12 columns">
 
-        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <a href="#" class='radius button' data-reveal-id="myModal2">Subscribe!</a>
+
+        <div id="myModal2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
           <?php print render($page['sidebar_second']);?>
           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
@@ -163,53 +168,37 @@
       </div>
     </div>
     <div class='row'>
-        <div class="small-12 medium-12 large-8 columns front-content">
+        <div class="small-12 medium-9 large-9 columns front-content">
+
           <?php print render($page['content']);?>
         </div>
-        <div class='small-2 columns sidebar'>
-          <div class="small-8 columns">
+        <div class='small-3 columns sidebar'>
+            <?php print render($page['sidebar_third']);?>
+            <!--lets put the subscribe in a modal-->
             <a href="#" class='radius button' data-reveal-id="myModal">Subscribe!</a>
 
             <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h4>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</h4>
               <?php print render($page['sidebar_second']);?>
               <a class="close-reveal-modal" aria-label="Close">&#215;</a>
             </div>
 
-          </div>
         </div>
     </div>
 
+    <!--********
+    ********
+    ********
+    ********
+    -->
+
     <!--/.main region -->
 
-    <?php /*if (!empty($page['sidebar_first'])): ?>
-      <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>
-    <?php endif; ?>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>
-    <?php endif;*/ ?>
   </main>
   <!--/.main-->
 
-  <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
-    <!--.triptych-->
-    <section class="l-triptych row">
-      <div class="triptych-first large-4 columns">
-        <?php print render($page['triptych_first']); ?>
-      </div>
-      <div class="triptych-middle large-4 columns">
-        <?php print render($page['triptych_middle']); ?>
-      </div>
-      <div class="triptych-last large-4 columns">
-        <?php print render($page['triptych_last']); ?>
-      </div>
-    </section>
-    <!--/.triptych -->
-  <?php endif; ?>
+
 
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->

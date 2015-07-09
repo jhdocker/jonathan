@@ -75,5 +75,6 @@
             <?php endif; ?>
 
           <?php print render($page['content']);?>
+          <?php print render($page['sidebar_third']);?>
         </div>
     </div>
