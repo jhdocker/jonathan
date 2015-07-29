@@ -157,9 +157,7 @@
     <!--hidden subscribe field for mobile-->
     <div class="row ">
       <div class="small-12 columns">
-        <div class="small-subscribe">
-          <a href="#" data-reveal-id="myModal2">Subscribe!</a>
-        </div>
+        <a href="#" class="subscribe-btn small-subscribe" data-reveal-id="myModal"><div class="subscribe">Subscribe!</div></a>
         <div id="myModal2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
           <?php print render($page['sidebar_second']);?>
           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
@@ -175,9 +173,9 @@
         <div class='small-3 columns sidebar'>
             <?php print render($page['sidebar_third']);?>
             <!--lets put the subscribe in a modal-->
-            <div class="subscribe">
-              <a href="#" data-reveal-id="myModal">Subscribe!</a>
-            </div>
+
+              <a href="#" class="subscribe-btn" data-reveal-id="myModal"><div class="subscribe">Subscribe!</div></a>
+
 
             <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
               <h4>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</h4>

@@ -247,29 +247,20 @@ p {
     }
 }
 
-.subscribe {
-    margin-bottom: 100px;
-}
 
-.small-subscribe , .subscribe{
+
+.subscribe{
     height: 60px;
     border: solid 3px #888;
     width: 160px;
     text-align: center;
     padding: 18px;
+    color: #888;
+    font-family: 'Montserrat', sans-serif;
 
     &:hover {
-        border: solid 3px #31A6BB;
-    }
-
-    a {
-        color: #888;
-        font-family: 'Montserrat', sans-serif;
-
-        &:hover {
-            color: #31A6BB;
-        }
-
+        color: #fff;
+        background-color: #888;
      }
 
     .button {

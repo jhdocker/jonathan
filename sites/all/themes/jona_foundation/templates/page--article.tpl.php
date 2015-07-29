@@ -76,9 +76,7 @@
 
             <?php print render($page['content']);?>
             <?php// print render($page['sidebar_third']);?>
-            <div class="subscribe">
-              <a href="#" data-reveal-id="myModal">Subscribe!</a>
-            </div>
+            <a href="#" class="subscribe-btn small-subscribe" data-reveal-id="myModal"><div class="subscribe">Subscribe!</div></a>
 
 
               <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
