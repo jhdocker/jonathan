@@ -7386,181 +7386,238 @@ p {
 .l-main {
   margin-left: 0;
   margin-right: 0;
+  padding: 0 25px;
   max-width: 100%;
 }
 
-/* line 109, ../scss/jona_foundation.scss */
+/* line 110, ../scss/jona_foundation.scss */
 .node-title {
   margin-bottom: 0px;
   padding-top: 60px;
 }
-/* line 115, ../scss/jona_foundation.scss */
+/* line 116, ../scss/jona_foundation.scss */
 .node-title a {
   color: #454545;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
 }
 
-/* line 122, ../scss/jona_foundation.scss */
+/* line 128, ../scss/jona_foundation.scss */
 .front-content {
-  width: 60%;
   padding: 0 40px;
   margin-top: -7px;
-  margin-left: 15%;
   border-left: solid 1.5px #ccc;
   border-right: solid 1.5px #ccc;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 122, ../scss/jona_foundation.scss */
+  /* line 128, ../scss/jona_foundation.scss */
   .front-content {
     width: 70%;
     margin-left: 0;
   }
 }
 @media only screen and (max-width: 940px) {
-  /* line 122, ../scss/jona_foundation.scss */
+  /* line 128, ../scss/jona_foundation.scss */
   .front-content {
     border-right: none;
     border-left: none;
     width: 100%;
     margin-left: 0;
     margin-top: -20px;
+    padding: 10px;
   }
 }
-/* line 144, ../scss/jona_foundation.scss */
+/* line 151, ../scss/jona_foundation.scss */
 .front-content h1 {
   padding-top: 60px;
   margin-bottom: 0px;
 }
-/* line 149, ../scss/jona_foundation.scss */
+/* line 156, ../scss/jona_foundation.scss */
 .front-content img {
   margin-bottom: 40px;
 }
-/* line 153, ../scss/jona_foundation.scss */
+/* line 160, ../scss/jona_foundation.scss */
 .front-content p {
   letter-spacing: -0.02em;
   line-height: 1.4;
   font-size: 0.9em;
 }
 
-/* line 161, ../scss/jona_foundation.scss */
+/* line 168, ../scss/jona_foundation.scss */
 .top-bar {
   background-color: #454545;
   z-index: 10;
 }
-/* line 166, ../scss/jona_foundation.scss */
+/* line 173, ../scss/jona_foundation.scss */
 .top-bar .top-bar-section ul li a {
   background-color: #454545;
 }
-/* line 170, ../scss/jona_foundation.scss */
+/* line 177, ../scss/jona_foundation.scss */
 .top-bar .name {
   margin-left: 165px;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 170, ../scss/jona_foundation.scss */
+  /* line 177, ../scss/jona_foundation.scss */
   .top-bar .name {
     margin-left: 10px;
   }
 }
 
-/* line 179, ../scss/jona_foundation.scss */
+/* line 186, ../scss/jona_foundation.scss */
 .submitted {
   color: #888;
   margin-bottom: 20px;
 }
 
-/* line 185, ../scss/jona_foundation.scss */
+/* line 192, ../scss/jona_foundation.scss */
 .node-readmore {
   padding-bottom: 60px;
   border-bottom: double #ccc;
   list-style-type: none;
 }
-/* line 190, ../scss/jona_foundation.scss */
+/* line 197, ../scss/jona_foundation.scss */
 .node-readmore a {
-  color: #389dec;
+  color: #31A6BB;
 }
 
-/* line 197, ../scss/jona_foundation.scss */
+/* line 204, ../scss/jona_foundation.scss */
 .content {
   margin-top: 30px;
 }
+@media only screen and (max-width: 940px) {
+  /* line 207, ../scss/jona_foundation.scss */
+  .content .image {
+    width: 100%;
+  }
+}
 
-/* line 201, ../scss/jona_foundation.scss */
+/* line 214, ../scss/jona_foundation.scss */
 .sidebar {
   margin-top: 90px;
   text-align: center;
 }
-/* line 205, ../scss/jona_foundation.scss */
+/* line 218, ../scss/jona_foundation.scss */
 .sidebar p {
   text-align: left;
 }
-/* line 209, ../scss/jona_foundation.scss */
+/* line 222, ../scss/jona_foundation.scss */
 .sidebar img {
   height: 200px;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 201, ../scss/jona_foundation.scss */
+  /* line 214, ../scss/jona_foundation.scss */
   .sidebar {
     margin-right: 20px;
   }
 }
 @media only screen and (max-width: 940px) {
-  /* line 201, ../scss/jona_foundation.scss */
+  /* line 214, ../scss/jona_foundation.scss */
   .sidebar {
     display: none;
   }
 }
-/* line 221, ../scss/jona_foundation.scss */
+/* line 234, ../scss/jona_foundation.scss */
 .sidebar .form-submit {
   background-color: #888;
   border: none;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 229, ../scss/jona_foundation.scss */
+/* line 241, ../scss/jona_foundation.scss */
 .small-subscribe {
   display: none;
-  text-align: center;
-}
-/* line 233, ../scss/jona_foundation.scss */
-.small-subscribe .button {
-  width: 80%;
 }
 @media only screen and (max-width: 940px) {
-  /* line 229, ../scss/jona_foundation.scss */
+  /* line 241, ../scss/jona_foundation.scss */
   .small-subscribe {
     display: block;
-    margin: 10px 10px 0 10px !important;
+    margin: 10px 10px 0 0px !important;
   }
 }
-/* line 242, ../scss/jona_foundation.scss */
-.small-subscribe .form-submit {
+
+/* line 250, ../scss/jona_foundation.scss */
+.subscribe {
+  margin-bottom: 100px;
+}
+
+/* line 254, ../scss/jona_foundation.scss */
+.small-subscribe, .subscribe {
+  height: 60px;
+  border: solid 3px #888;
+  width: 160px;
+  text-align: center;
+  padding: 18px;
+}
+/* line 261, ../scss/jona_foundation.scss */
+.small-subscribe:hover, .subscribe:hover {
+  border: solid 3px #31A6BB;
+}
+/* line 265, ../scss/jona_foundation.scss */
+.small-subscribe a, .subscribe a {
+  color: #888;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 269, ../scss/jona_foundation.scss */
+.small-subscribe a:hover, .subscribe a:hover {
+  color: #31A6BB;
+}
+/* line 275, ../scss/jona_foundation.scss */
+.small-subscribe .button, .subscribe .button {
+  width: 250px;
+}
+/* line 279, ../scss/jona_foundation.scss */
+.small-subscribe .form-submit, .subscribe .form-submit {
   background-color: #888;
   border: none;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 251, ../scss/jona_foundation.scss */
+/* line 288, ../scss/jona_foundation.scss */
 .image-large-left {
   float: left;
   margin-right: 10px;
 }
 
-/* line 256, ../scss/jona_foundation.scss */
+/* line 293, ../scss/jona_foundation.scss */
 .reveal-modal {
   width: 60%;
   left: 60%;
 }
-/* line 260, ../scss/jona_foundation.scss */
+/* line 297, ../scss/jona_foundation.scss */
 .reveal-modal .block-title {
   display: none;
 }
-/* line 264, ../scss/jona_foundation.scss */
+/* line 301, ../scss/jona_foundation.scss */
 .reveal-modal input {
   width: 300px;
 }
+@media only screen and (max-width: 320px) {
+  /* line 301, ../scss/jona_foundation.scss */
+  .reveal-modal input {
+    width: 250px;
+  }
+}
+/* line 309, ../scss/jona_foundation.scss */
+.reveal-modal img {
+  height: 200px;
+  float: right;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 1210px) {
+  /* line 309, ../scss/jona_foundation.scss */
+  .reveal-modal img {
+    height: 150px;
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 940px) {
-  /* line 256, ../scss/jona_foundation.scss */
+  /* line 309, ../scss/jona_foundation.scss */
+  .reveal-modal img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 940px) {
+  /* line 293, ../scss/jona_foundation.scss */
   .reveal-modal {
     width: 90%;
     left: 45%;

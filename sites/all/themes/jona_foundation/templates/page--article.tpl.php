@@ -65,16 +65,29 @@
 
     </section>
     <?php endif; ?>
+    <div class="article">
+      <div class='row'>
+          <div class="small-12 large-centered small-centered columns front-content">
+              <?php if ($title && !$is_front): ?>
+                  <?php print render($title_prefix); ?>
+                  <h1 id="page-title" class="title"><?php print $title; ?></h1>
+                  <?php print render($title_suffix); ?>
+              <?php endif; ?>
 
-    <div class='row'>
-        <div class="small-12 large-centered small-centered columns front-content">
-            <?php if ($title && !$is_front): ?>
-                <?php print render($title_prefix); ?>
-                <h1 id="page-title" class="title"><?php print $title; ?></h1>
-                <?php print render($title_suffix); ?>
-            <?php endif; ?>
+            <?php print render($page['content']);?>
+            <?php// print render($page['sidebar_third']);?>
+            <div class="subscribe">
+              <a href="#" data-reveal-id="myModal">Subscribe!</a>
+            </div>
 
-          <?php print render($page['content']);?>
-          <?php print render($page['sidebar_third']);?>
-        </div>
+
+              <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h4>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</h4>
+                <img class='doyle' src="sites/all/themes/jona_foundation/images/doyle-med.png">
+                <?php print render($page['sidebar_second']);?>
+
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+              </div>
+          </div>
+      </div>
     </div>

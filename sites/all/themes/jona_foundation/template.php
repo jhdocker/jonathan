@@ -7,6 +7,17 @@
 function jona_foundation_preprocess_html(&$variables) {
 //  // Add conditional CSS for IE. To use uncomment below and add IE css file
   drupal_add_css('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700', array('type' => 'external'));
+
+  $viewport = array(
+  '#tag' => 'meta',
+  '#attributes' => array(
+    'name' => 'viewport',
+    'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
+  ),
+);
+drupal_add_html_head($viewport, 'viewport');
+
+//www.webomelette.com/drupal-add-html-tag-head-meta-link#sthash.plzgP3ff.dpuf
 //
 //  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
 //  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external');

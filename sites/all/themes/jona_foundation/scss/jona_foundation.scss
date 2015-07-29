@@ -103,6 +103,7 @@ p {
 .l-main {
     margin-left: 0;
     margin-right: 0;
+    padding:0 25px;
     max-width: 100%;
 }
 
@@ -118,13 +119,18 @@ p {
             font-size: 0.8em;
         }
 }
+.article {
+    .front-content {
+        //width: 80%;
+    }
+}
 
 .front-content {
     //front page content with articles
-    width: 60%;
+    //width: 60%;
     padding: 0 40px;
     margin-top: -7px;
-    margin-left: 15%;
+    //margin-left: 15%;
     border-left: solid 1.5px #ccc;
     border-right: solid 1.5px #ccc;
 
@@ -139,6 +145,7 @@ p {
         width: 100%;
         margin-left: 0;
         margin-top: -20px;
+        padding: 10px;
     }
 
     h1 {
@@ -189,13 +196,19 @@ p {
 
     a {
         // read more font color
-        color: #389dec;
+        color: #31A6BB;
     }
 
 }
 
 .content {
     margin-top: 30px;
+
+    .image {
+        @media only screen and (max-width:940px){
+            width: 100%;
+        }
+    }
 }
 
 .sidebar {
@@ -225,18 +238,42 @@ p {
 
     }
 }
-
-.small-subscribe {
-    display: none;
-    text-align: center;
-
-    .button {
-        width: 80%;
-    }
+.small-subscribe{
+    display:none;
 
     @media only screen and (max-width: 940px) {
         display: block;
-        margin: 10px 10px 0 10px !important;
+        margin: 10px 10px 0 0px !important;
+    }
+}
+
+.subscribe {
+    margin-bottom: 100px;
+}
+
+.small-subscribe , .subscribe{
+    height: 60px;
+    border: solid 3px #888;
+    width: 160px;
+    text-align: center;
+    padding: 18px;
+
+    &:hover {
+        border: solid 3px #31A6BB;
+    }
+
+    a {
+        color: #888;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            color: #31A6BB;
+        }
+
+     }
+
+    .button {
+        width: 250px;
     }
 
     .form-submit {
@@ -263,6 +300,25 @@ p {
 
     input{
         width: 300px;
+
+         @media only screen and (max-width: 320px){
+            width: 250px;
+        }
+    }
+
+    img {
+        height: 200px;
+        float: right;
+        margin-right: 100px;
+
+        @media only screen and (max-width: 1210px){
+            height: 150px;
+            margin-right: 0;
+        }
+
+        @media only screen and (max-width: 940px){
+            display:none;
+        }
     }
 
     @media only screen and (max-width: 940px) {
