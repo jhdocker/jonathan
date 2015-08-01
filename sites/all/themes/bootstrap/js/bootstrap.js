@@ -163,4 +163,8 @@ var Drupal = Drupal || {};
     }
   };
 
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
+
 })(jQuery, Drupal);
