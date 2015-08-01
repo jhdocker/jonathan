@@ -173,17 +173,13 @@
         <div class='small-3 columns sidebar'>
             <?php print render($page['sidebar_third']);?>
             <!--lets put the subscribe in a modal-->
-
               <a href="#" class="subscribe-btn" data-reveal-id="myModal"><div class="subscribe">Subscribe!</div></a>
-
-
             <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
               <h4>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</h4>
               <img class='doyle' src="sites/all/themes/jona_foundation/images/doyle-med.png">
               <?php print render($page['sidebar_second']);?>
               <a class="close-reveal-modal" aria-label="Close">&#215;</a>
             </div>
-
         </div>
     </div>
 
