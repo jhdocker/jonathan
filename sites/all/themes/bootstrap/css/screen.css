@@ -236,24 +236,30 @@ p {
   color: #fff;
 }
 
-/* line 172, ../sass/_style.scss */
+/* line 171, ../sass/_style.scss */
+.insert-image {
+  height: auto !important;
+  width: auto !important;
+}
+
+/* line 176, ../sass/_style.scss */
 h1.page-header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
 }
 
-/* line 177, ../sass/_style.scss */
+/* line 181, ../sass/_style.scss */
 .footer {
   border-top: none;
 }
 
-/* line 181, ../sass/_style.scss */
+/* line 185, ../sass/_style.scss */
 .image-large-left {
   float: left;
   margin-right: 10px;
 }
 
-/* line 186, ../sass/_style.scss */
+/* line 190, ../sass/_style.scss */
 .image-large-right {
   float: right;
   margin-left: 10px;
