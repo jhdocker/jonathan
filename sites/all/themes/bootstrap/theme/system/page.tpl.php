@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- 
+
  * Regions:
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['highlighted']: Items for the highlighted content region.
@@ -22,7 +22,7 @@
  */
 ?>
 <header id="navbar" role="banner" class="navbar navbar-default">
- 
+
     <div class="navbar-header">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -58,7 +58,7 @@
         </nav>
       </div>
     <?php endif; ?>
- 
+
 </header>
 
 <div class="main-container container">
@@ -73,10 +73,10 @@
 
   <div class="row">
 
-    
+
 
     <section>
-      
+
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
@@ -84,7 +84,7 @@
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-      
+
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
@@ -106,14 +106,12 @@
                 <p>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</p>
                 <?php print render($page['sidebar_second']); ?>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+
             </div>
           </div>
         </div>
 
-      
+
         <div class="col-md-9 blog-content">
           <?php print $messages; ?>
           <div class="small-subscribe">
@@ -123,7 +121,7 @@
         </div>
         <div class="col-md-3 sidebar-content">
 
-          
+
           <img src="sites/all/themes/bootstrap/images/bust.png">
           <p>Hi, I'm Jonathan, and I'm about to rock your world with an awesome new blog. Subscribe or be dragged into the depths of shitty art hypocrisy</p>
 
@@ -144,9 +142,6 @@
                 <p>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</p>
                 <?php print render($page['sidebar_second']); ?>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
             </div>
           </div>
         </div>
@@ -154,7 +149,7 @@
 
     </section>
 
-    
+
 
   </div>
 </div>
@@ -164,5 +159,5 @@
       <p>All rights reserved....</p>
     </dov>
   </div>
-  
+
 </footer>
