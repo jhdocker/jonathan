@@ -21,8 +21,8 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
+<header id="navbar" role="banner" class="navbar navbar-default">
+ 
     <div class="navbar-header">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -58,7 +58,7 @@
         </nav>
       </div>
     <?php endif; ?>
-  </div>
+ 
 </header>
 
 <div class="main-container container">
@@ -84,7 +84,7 @@
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
+      
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
@@ -95,14 +95,40 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Subscribe For The Latest Updates</h4>
+              </div>
+              <div class="modal-body">
+                <p>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</p>
+                <?php print render($page['sidebar_second']); ?>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       
-        <div class="col-md-8 blog-content">
+        <div class="col-md-9 blog-content">
+          <?php print $messages; ?>
+          <div class="small-subscribe">
+            <button type="button" class="btn subscribe-btn btn-lg" data-toggle="modal" data-target="#myModal2">Subscribe!</button>
+          </div>
           <?php print render($page['content']); ?>
         </div>
-        <div class="col-md-4 sidebar-content">
+        <div class="col-md-3 sidebar-content">
+
+          
+          <img src="sites/all/themes/bootstrap/images/bust.png">
+          <p>Hi, I'm Jonathan, and I'm about to rock your world with an awesome new blog. Subscribe or be dragged into the depths of shitty art hypocrisy</p>
 
          <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        <button type="button" class="btn subscribe-btn btn-lg" data-toggle="modal" data-target="#myModal">
           Subscribe!
         </button>
 
@@ -112,7 +138,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Subscribe Now</h4>
+                <h4 class="modal-title" id="myModalLabel">Subscribe For The Latest Updates</h4>
               </div>
               <div class="modal-body">
                 <p>Subscribe and get notified of any new content. Ah go on. Ya will Ya will Ya will.</p>
@@ -128,14 +154,15 @@
 
     </section>
 
-    <?php //if (!empty($page['sidebar_second'])): ?>
-      <!-- <aside class="col-sm-3" role="complementary">
-        
-      </aside>  --> <!-- /#sidebar-second -->
-    <?php //endif; ?>
+    
 
   </div>
 </div>
 <footer class="footer container">
-  <?php print render($page['footer']); ?>
+  <div class="row">
+    <dov class="col-sm-12">
+      <p>All rights reserved....</p>
+    </dov>
+  </div>
+  
 </footer>

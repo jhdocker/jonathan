@@ -1,6 +1,7 @@
-h1 {
-    color: #454545;
+h2, h3, a {
+	font-family: $heading-font;
 }
+ 
 h2 {
     a {
         color: #454545;
@@ -8,6 +9,8 @@ h2 {
 }
 p {
     color: $dark-gray;
+    font-family: $font-family;
+    line-height: 1.4em;
 }
 .boosh {
     p {
@@ -16,12 +19,152 @@ p {
 }
 
 .container {
-	width: 1200px !important;
+	max-width: 1200px;
 }
 
-.field-item {
+.blog-content {
+	
+	border-left: solid 1.5px #ccc;
+	border-right: solid 1.5px #ccc;
 
-	a img {
-		width: 100%;
+	@media (min-width:768px) {
+		padding: 50px;
+		margin-top: -20px;
 	}
+
+	h2 a {
+		text-transform: uppercase;
+		font-size: 2em;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+		box-shadow: 2px 2px 9px #ccc;
+	}
+
+	.node-article {
+		margin-bottom: 50px;
+	}
+	.small-subscribe {
+		text-align: right;
+		
+		@media (min-width: 992px) {
+			display: none;
+		}
+		.subscribe-btn {
+			margin-bottom: 15px;
+		}
+	}
+
+	
+}
+
+.sidebar-content {
+	display: none;
+
+	@media (min-width:992px) {
+		display: block;
+	}
+
+	button {
+		font-family: $font-family;
+		color: #888;
+	}
+
+	text-align: center;
+	h1 {
+		padding-bottom: 25px;
+		font-family: $heading-font;
+		font-size: 1.2em;
+
+		
+	}
+
+	img {
+		height: 300px;
+
+		@media (min-width:992px) {
+			margin-top: 95px;
+		}
+	}
+
+	p {
+		text-align: left;
+		padding-top: 25px;
+
+	}
+
+	.subscribe-btn {
+		margin-top: 15px;
+
+	}
+
+
+
+}
+
+.modal-body {
+	h2{
+		padding: 20px 0;
+	}
+}
+
+.field-items {
+		p {
+			margin-top: 25px;
+			letter-spacing: 0.02em;
+			line-height: 1.4;
+			font-size: 0.9em;
+		}
+	}
+
+.navbar-default {
+	border: none;
+	border-radius: 0;
+	background-color: $dark-gray;
+
+	li {
+
+		a {
+			color: #fff;
+			font-family: $font-family;
+			font-weight: 600;
+
+			&:hover {
+				background-color: $dark-gray;
+				color: #fff !important;
+			}
+		}
+	}
+
+	a.name {
+		font-family: "Montserrat", sans-serif;
+	    color: #fff;
+	}
+
+	.navbar-nav {
+		li a {
+			color: #fff;
+		}
+		.active a{
+			color: #fff;
+			background-color: $dark-gray;
+
+			&:hover {
+				background-color: $dark-gray;
+				color: #fff;
+			}
+		}
+	}
+}
+
+h1.page-header {
+	font-family: $heading-font;
+	font-size: 1.5em;
+}
+
+.footer {
+	border-top: none;
 }

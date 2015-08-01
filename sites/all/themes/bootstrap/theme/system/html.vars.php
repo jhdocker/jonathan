@@ -23,4 +23,7 @@ function bootstrap_preprocess_html(&$variables) {
       $variables['classes_array'][] = 'navbar-is-static-top';
       break;
   }
+  drupal_add_css('http://fonts.googleapis.com/css?family=Roboto+Slab:200,400,700', array('type' => 'external'));
+  drupal_add_css('http://fonts.googleapis.com/css?family=Montserrat:700', array('type' => 'external'));
+ 
 }
