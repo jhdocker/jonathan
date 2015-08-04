@@ -37,11 +37,13 @@ p {
 		font-size: 2em;
 	}
 
-	img {
+	.field-type-image {
+		img {
 		width: 100%;
 		height: 100%;
 		border-radius: 3px;
 		box-shadow: 2px 2px 9px #ccc;
+	}
 	}
 
 	.node-article {
@@ -169,8 +171,7 @@ p {
 	}
 }
 .insert-image {
-	height: auto !important;
-	width: auto !important;
+
 }
 
 h1.page-header {

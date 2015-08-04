@@ -111,87 +111,87 @@ p {
   text-transform: uppercase;
   font-size: 2em;
 }
-/* line 40, ../sass/_style.scss */
-.blog-content img {
+/* line 41, ../sass/_style.scss */
+.blog-content .field-type-image img {
   width: 100%;
   height: 100%;
   border-radius: 3px;
   box-shadow: 2px 2px 9px #ccc;
 }
-/* line 47, ../sass/_style.scss */
+/* line 49, ../sass/_style.scss */
 .blog-content .node-article {
   margin-bottom: 50px;
   border-bottom: double #ccc;
   padding-bottom: 50px;
 }
-/* line 52, ../sass/_style.scss */
+/* line 54, ../sass/_style.scss */
 .blog-content .small-subscribe {
   text-align: right;
 }
 @media (min-width: 992px) {
-  /* line 52, ../sass/_style.scss */
+  /* line 54, ../sass/_style.scss */
   .blog-content .small-subscribe {
     display: none;
   }
 }
-/* line 58, ../sass/_style.scss */
+/* line 60, ../sass/_style.scss */
 .blog-content .small-subscribe .subscribe-btn {
   margin-bottom: 15px;
 }
 
-/* line 66, ../sass/_style.scss */
+/* line 68, ../sass/_style.scss */
 .sidebar-content {
   display: none;
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 66, ../sass/_style.scss */
+  /* line 68, ../sass/_style.scss */
   .sidebar-content {
     display: block;
   }
 }
-/* line 73, ../sass/_style.scss */
+/* line 75, ../sass/_style.scss */
 .sidebar-content button {
   font-family: "Open Sans", sans-serif;
   color: #888;
 }
-/* line 79, ../sass/_style.scss */
+/* line 81, ../sass/_style.scss */
 .sidebar-content h1 {
   padding-bottom: 25px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
 }
-/* line 87, ../sass/_style.scss */
+/* line 89, ../sass/_style.scss */
 .sidebar-content img {
   height: 300px;
 }
 @media (min-width: 992px) {
-  /* line 87, ../sass/_style.scss */
+  /* line 89, ../sass/_style.scss */
   .sidebar-content img {
     margin-top: 95px;
   }
 }
-/* line 95, ../sass/_style.scss */
+/* line 97, ../sass/_style.scss */
 .sidebar-content p {
   text-align: left;
   padding-top: 25px;
 }
-/* line 101, ../sass/_style.scss */
+/* line 103, ../sass/_style.scss */
 .sidebar-content .subscribe-btn {
   margin-top: 15px;
 }
 
-/* line 111, ../sass/_style.scss */
+/* line 113, ../sass/_style.scss */
 .modal-body h2 {
   padding: 20px 0;
 }
-/* line 117, ../sass/_style.scss */
+/* line 119, ../sass/_style.scss */
 .modal-body label {
   font-family: "Open Sans", sans-serif;
   padding-bottom: 10px;
 }
 
-/* line 124, ../sass/_style.scss */
+/* line 126, ../sass/_style.scss */
 .field-items p {
   margin-top: 25px;
   letter-spacing: 0.02em;
@@ -199,67 +199,61 @@ p {
   font-size: 0.9em;
 }
 
-/* line 132, ../sass/_style.scss */
+/* line 134, ../sass/_style.scss */
 .navbar-default {
   border: none;
   border-radius: 0;
   background-color: #454545;
 }
-/* line 139, ../sass/_style.scss */
+/* line 141, ../sass/_style.scss */
 .navbar-default li a {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
-/* line 144, ../sass/_style.scss */
+/* line 146, ../sass/_style.scss */
 .navbar-default li a:hover {
   background-color: #454545;
   color: #fff !important;
 }
-/* line 151, ../sass/_style.scss */
+/* line 153, ../sass/_style.scss */
 .navbar-default a.name {
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
-/* line 157, ../sass/_style.scss */
+/* line 159, ../sass/_style.scss */
 .navbar-default .navbar-nav li a {
   color: #fff;
 }
-/* line 160, ../sass/_style.scss */
+/* line 162, ../sass/_style.scss */
 .navbar-default .navbar-nav .active a {
   color: #fff;
   background-color: #454545;
 }
-/* line 164, ../sass/_style.scss */
+/* line 166, ../sass/_style.scss */
 .navbar-default .navbar-nav .active a:hover {
   background-color: #454545;
   color: #fff;
 }
 
-/* line 171, ../sass/_style.scss */
-.insert-image {
-  height: auto !important;
-  width: auto !important;
-}
-
-/* line 176, ../sass/_style.scss */
+/* line 177, ../sass/_style.scss */
 h1.page-header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
 }
 
-/* line 181, ../sass/_style.scss */
+/* line 182, ../sass/_style.scss */
 .footer {
   border-top: none;
 }
 
-/* line 185, ../sass/_style.scss */
+/* line 186, ../sass/_style.scss */
 .image-large-left {
   float: left;
   margin-right: 10px;
 }
 
-/* line 190, ../sass/_style.scss */
+/* line 191, ../sass/_style.scss */
 .image-large-right {
   float: right;
   margin-left: 10px;

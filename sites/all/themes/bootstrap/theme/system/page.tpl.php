@@ -123,7 +123,7 @@
 
 
           <img src="sites/all/themes/bootstrap/images/bust.png">
-          <p>Hi, I'm Jonathan, and I'm about to rock your world with an awesome new blog. Subscribe or be dragged into the depths of shitty art hypocrisy</p>
+          <p>Hi, I'm Jonathan</p>
 
          <!-- Button trigger modal -->
         <button type="button" class="btn subscribe-btn btn-lg" data-toggle="modal" data-target="#myModal">
