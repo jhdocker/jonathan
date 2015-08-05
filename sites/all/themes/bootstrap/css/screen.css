@@ -258,37 +258,37 @@ h1.page-header {
 }
 
 /* line 194, ../sass/_style.scss */
-.image-large-left {
+.image-large_left {
   float: left;
   margin-right: 10px;
 }
 
 /* line 198, ../sass/_style.scss */
-.image-medium-left {
+.image-medium_left {
   float: left;
   margin-right: 10px;
 }
 
 /* line 202, ../sass/_style.scss */
-.image-small-left {
+.image-small_left {
   float: left;
   margin-right: 10px;
 }
 
 /* line 207, ../sass/_style.scss */
-.image-large-right {
+.image-large_right {
   float: right;
   margin-left: 10px;
 }
 
 /* line 211, ../sass/_style.scss */
-.image-medium-right {
+.image-medium_right {
   float: right;
   margin-left: 10px;
 }
 
 /* line 215, ../sass/_style.scss */
-.image-small-right {
+.image-small_right {
   float: right;
   margin-left: 10px;
 }
