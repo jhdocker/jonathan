@@ -123,7 +123,9 @@
 
 
           <img src="sites/all/themes/bootstrap/images/bust.png">
-          <p>Hi, I'm Jonathan</p>
+          <?php
+          print render($page['sidebar_first']);
+           ?>
 
          <!-- Button trigger modal -->
         <button type="button" class="btn subscribe-btn btn-lg" data-toggle="modal" data-target="#myModal">
