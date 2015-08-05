@@ -263,8 +263,32 @@ h1.page-header {
   margin-right: 10px;
 }
 
-/* line 201, ../sass/_style.scss */
+/* line 200, ../sass/_style.scss */
+.image-medium-left {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 204, ../sass/_style.scss */
+.image-small-left {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 209, ../sass/_style.scss */
 .image-large-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 213, ../sass/_style.scss */
+.image-medium-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* line 217, ../sass/_style.scss */
+.image-small-right {
   float: right;
   margin-left: 10px;
 }
