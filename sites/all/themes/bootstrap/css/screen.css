@@ -111,13 +111,6 @@ p {
   text-transform: uppercase;
   font-size: 2em;
 }
-/* line 41, ../sass/_style.scss */
-.blog-content .field-type-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-  box-shadow: 2px 2px 9px #ccc;
-}
 /* line 49, ../sass/_style.scss */
 .blog-content .node-article {
   margin-bottom: 50px;
@@ -258,7 +251,7 @@ h1.page-header {
 }
 
 /* line 194, ../sass/_style.scss */
-.image-large_left {
+.image-large-left {
   float: left;
   margin-right: 10px;
 }
@@ -267,27 +260,28 @@ h1.page-header {
 .image-medium_left {
   float: left;
   margin-right: 10px;
+  width: 40%;
 }
 
-/* line 202, ../sass/_style.scss */
+/* line 203, ../sass/_style.scss */
 .image-small_left {
   float: left;
   margin-right: 10px;
 }
 
-/* line 207, ../sass/_style.scss */
+/* line 208, ../sass/_style.scss */
 .image-large_right {
   float: right;
   margin-left: 10px;
 }
 
-/* line 211, ../sass/_style.scss */
+/* line 212, ../sass/_style.scss */
 .image-medium_right {
   float: right;
   margin-left: 10px;
 }
 
-/* line 215, ../sass/_style.scss */
+/* line 216, ../sass/_style.scss */
 .image-small_right {
   float: right;
   margin-left: 10px;

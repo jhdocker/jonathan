@@ -21,4 +21,4 @@
  *   otherwise use the file name.
  */
 ?>
-<span class="file"><?php print $icon; ?> <a href="<?php print $url ?>"<?php print $class ? ' class="' . $class . '"' : '' ?> title="__description__">__description_or_filename__</a></span>
+<div class="file"><?php print $icon; ?> <a href="<?php print $url ?>"<?php print $class ? ' class="' . $class . '"' : '' ?> title="__description__">__description_or_filename__</a></div>
