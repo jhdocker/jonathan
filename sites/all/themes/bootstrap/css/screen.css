@@ -286,3 +286,8 @@ h1.page-header {
   float: right;
   margin-left: 10px;
 }
+
+/* line 220, ../sass/_style.scss */
+span.imageeditor-inline-wrapper {
+  display: block;
+}
